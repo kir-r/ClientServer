@@ -33,7 +33,7 @@ public class Connection extends Thread {
 
                 while (true) {
                     String message = inputStream.readLine();
-                    if (message.equalsIgnoreCase("exit")) { //TODO error?
+                    if (message.equalsIgnoreCase("exit")) { //error?
                         threadBreak();
                         break;
                     }

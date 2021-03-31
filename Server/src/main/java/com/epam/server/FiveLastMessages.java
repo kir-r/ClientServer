@@ -16,9 +16,9 @@ public class FiveLastMessages {
 
     static Logger secondLogger = LogManager.getLogger("secondLogger");
 
-    public static void addLastFiveMessages(String message) { //TODO  log4j appender
+    public static void addLastFiveMessages(String message) { //log4j appender
 
-        secondLogger.info(message);
+        secondLogger.info(message); //doesn't work
 
         listOfFiveMessages.add(message);
         if (listOfFiveMessages.size() > 5) {
